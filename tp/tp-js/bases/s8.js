@@ -14,13 +14,13 @@ function codeDeclenchePeriodiquement(){
     }
 }
 
-
 var traitementPeriodique = setInterval(codeDeclenchePeriodiquement, 5000);
 //clearInterval(traitementPeriodique) 
 //permet de stopper le traitement déclenché toutes les 5000ms
 
 //TP : coder une variante du code possible.
-var traitementPeriodique2 = setInterval( ()=>{console.log("compteur2="+ ++compteur2);
-                                              if(compteur2==10)clearInterval(traitementPeriodique2) 
-                                            }
-                                        , 5000);
+var traitementPeriodique2 = setInterval( 
+    ()=>{console.log("compteur2="+ (++compteur2));
+        if(compteur2==10)clearInterval(traitementPeriodique2) 
+        }
+    , 5000);

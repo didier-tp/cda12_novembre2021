@@ -69,6 +69,12 @@ tabDevises.push(new Devise("USD","Dollar",1.0));
 tabDevises.push(new Devise("EUR","Euro",0.9));
 tabDevises.push(new Devise("GBP","Livre",0.8));
 tabDevises.push(new Devise("JPY","Yen",123.0));
+
+//retrier les éléments du tableau des devises
+//selon l'ordre croissants des taux de change:
+tabDevises.sort((d1,d2)=>d1.change - d2.change);
+//tabDevises.sort((d1,d2)=>d1.code.localeCompare(d2.code));
+
 for(i in tabDevises){
    tabDevises[i].display();
 }
