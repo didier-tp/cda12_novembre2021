@@ -1,4 +1,5 @@
 var a = 12; console.log("Type de a = " + typeof a);
+
 var sB = "13"; console.log("Type de sB = " + typeof sB);
 var b = Number(sB);
 var c = a + b;
@@ -12,37 +13,19 @@ if(c === "25")
  else 
    console.log("c ne vaut pas 25 ou bien n'est pas de type string");
 
-function addition(pa,pb){
-   //console.log("type de pa=" + typeof pa);
-   let r = Number(pa) + Number(pb);
-   return r;
-}   
+var v1 = null;
+var v2; //undefined si pas initialisee
+if(v1==v2) 
+  
+console.log("v1 et v2 sont considérees comme de valeurs à peu près égales") ;
 
-var soustraction = function (pa,pb){
-    return pa-pb;
-}
-/*
-//fonction flèchée possible depuis version 2015 de javascript
-var multiplication = (pa,pb) => {
-    return pa-pb;
-}
-*/
+//v1 = 0;
+//v2 = 1;
+v1 = null;
+v2 = new String("abc");
 
-var res2 = soustraction(7,3);
-console.log("res2="+res2);
-console.log("type de la variable soustraction= "+typeof soustraction);
+if(v1) console.log("v1 considéree comme true");
+      else console.log("v1 considéree comme false");
 
-//x=6; //possible (sans mot clef var) mais déconseillé
-var x=6; //bien
-console.log(x)
-
-var res = addition(5,6);
-console.log("res="+res);
-
-res = addition("5","6");
-console.log("res="+res);
-
-var jour="mercredi"
-console.log( (jour == "lundi" ) ? "Bon lundi" : "pas lundi" );
-
-var age = prompt("votre age ?");
+if(v2) console.log("v2 considéree comme true");
+      else console.log("v2 considéree comme false");      
