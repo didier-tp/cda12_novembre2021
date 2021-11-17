@@ -42,8 +42,10 @@ $(function() {
        */
         //V3 (avec effet ):
         if(estCoche)
-            $("#ulHistorique").fadeIn(800);//400ms par defaut
+            //$("#ulHistorique").fadeIn(800);//400ms par defaut
+            $("#ulHistorique").slideDown(800);//400ms par defaut
          else
-           $("#ulHistorique").fadeOut(800);
+           //$("#ulHistorique").fadeOut(800);
+           $("#ulHistorique").slideUp(800);//400ms par defaut
    });
 });
