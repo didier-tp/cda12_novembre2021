@@ -7,6 +7,11 @@ function Ventes(secteur, chiffreAffaireHt){
 }
 
 var ventesPapeterie = new Ventes("papeterie",35892.45);
+console.log("ventesPapeterie="+ventesPapeterie + " de type " + typeof ventesPapeterie);
+//ventesPapeterie=[object Object] de type object
+if(ventesPapeterie instanceof Ventes) console.log("ventesPapeterie est une instance de Ventes")
+//ventesPapeterie est une instance de Ventes
+
 console.log(JSON.stringify(ventesPapeterie));
 //{"secteur":"papeterie","chiffreAffaireHt":35892.45}
 console.log("chiffreAffaireTtc pour papeterie:" 

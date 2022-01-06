@@ -8,6 +8,10 @@ var objPers = {
        ville : "Evreux" 
    }
 }
+
+console.log("objPers="+objPers + " de type " + typeof objPers);
+//objPers=[object Object] de type object
+
 var objPersAsJsonString = JSON.stringify(objPers)
 //affichage console:
 console.log("objPersAsJsonString="+objPersAsJsonString)
